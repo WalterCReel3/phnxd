@@ -1,0 +1,16 @@
+# This is a test file configuration
+#
+#
+#
+name		test
+logfile		"test.log"
+user		"www-data:www-data"
+
+#
+# Monitor configuration set
+#
+startup		say_hello	"./test.sh"
+startup		list_it		"ls -l /etc"
+startup		python_tst	"python mytest.py"
+monitor		say_it		"echo 'hi there\\n'"
+shutdown	now		"date"

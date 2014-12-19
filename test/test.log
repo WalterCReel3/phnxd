@@ -1,0 +1,471 @@
+name test
+logfile test.log
+startup say_hello "./test.sh"
+startup list_it "ls -l /etc"
+startup python_tst "python mytest.py"
+monitor say_it "echo 'hi there\n'"
+shutdown now "date"
+python_tst: Starting "python mytest.py"
+['mytest.py']
+hello from python
+list_it: Starting "ls -l /etc"
+total 1176
+drwxr-xr-x  3 root    root     4096 2010-10-07 12:12 acpi
+-rw-r--r--  1 root    root     2981 2010-10-07 11:58 adduser.conf
+drwxr-xr-x  2 root    root     4096 2010-10-23 14:23 alternatives
+-rw-r--r--  1 root    root      395 2010-06-20 04:11 anacrontab
+drwxr-xr-x  6 root    root     4096 2010-10-07 12:03 apm
+drwxr-xr-x  3 root    root     4096 2010-10-07 12:11 apparmor
+drwxr-xr-x  8 root    root     4096 2010-10-23 08:01 apparmor.d
+drwxr-xr-x  4 root    root     4096 2010-10-07 12:15 apport
+drwxr-xr-x  6 root    root     4096 2010-10-17 18:52 apt
+-rw-r-----  1 root    daemon    144 2010-06-27 15:36 at.deny
+drwxr-xr-x  3 root    root     4096 2010-10-07 12:12 avahi
+-rw-r--r--  1 root    root     1939 2010-08-10 15:58 bash.bashrc
+-rw-r--r--  1 root    root    57236 2010-08-06 19:39 bash_completion
+drwxr-xr-x  2 root    root     4096 2010-10-18 20:08 bash_completion.d
+-rw-r--r--  1 root    root      344 2010-09-10 13:01 bindresvport.blacklist
+-rw-r--r--  1 root    root      321 2010-03-22 13:50 blkid.conf
+lrwxrwxrwx  1 root    root       15 2010-10-16 11:40 blkid.tab -> /dev/.blkid.tab
+drwxr-xr-x  2 root    root     4096 2010-10-07 12:12 bluetooth
+-rw-r--r--  1 root    root     7439 2010-07-11 08:57 bogofilter.cf
+drwxr-xr-x  2 root    root     4096 2010-10-07 12:10 bonobo-activation
+-rw-r--r--  1 root    root       33 2010-10-07 12:14 brlapi.key
+drwxr-xr-x  2 root    root    12288 2010-10-07 12:14 brltty
+drwxr-xr-x  2 root    root     4096 2010-10-07 12:15 byobu
+drwxr-xr-x  3 root    root     4096 2010-10-07 12:01 ca-certificates
+-rw-r--r--  1 root    root     6332 2010-10-07 12:02 ca-certificates.conf
+drwxr-xr-x  2 root    root     4096 2010-10-07 12:11 calendar
+drwxr-s---  2 root    dip      4096 2010-10-07 12:11 chatscripts
+drwxr-xr-x  2 root    root     4096 2010-10-07 12:15 checkbox.d
+drwxr-xr-x  3 root    root     4096 2010-10-16 17:04 chromium-browser
+drwxr-xr-x  2 root    root     4096 2010-10-07 12:12 compizconfig
+drwxr-xr-x  2 root    root     4096 2010-10-07 12:15 computer-janitor.d
+drwxr-xr-x  5 root    root     4096 2010-10-07 12:01 ConsoleKit
+drwxr-xr-x  2 root    root     4096 2010-10-16 11:47 console-setup
+drwxrwxr-x  4 couchdb couchdb  4096 2010-10-07 12:12 couchdb
+drwxr-xr-x  2 root    root     4096 2010-10-07 12:12 cron.d
+drwxr-xr-x  2 root    root     4096 2010-10-17 12:19 cron.daily
+drwxr-xr-x  2 root    root     4096 2010-10-07 11:58 cron.hourly
+drwxr-xr-x  2 root    root     4096 2010-10-07 12:12 cron.monthly
+-rw-r--r--  1 root    root      724 2010-08-24 19:01 crontab
+drwxr-xr-x  2 root    root     4096 2010-10-07 12:15 cron.weekly
+-rw-r--r--  1 root    root       54 2010-10-07 12:17 crypttab
+drwxr-xr-x  4 root    lp       4096 2010-10-24 07:56 cups
+drwxr-xr-x  5 root    root     4096 2010-10-07 12:10 dbus-1
+-rw-r--r--  1 root    root     2969 2010-09-27 17:04 debconf.conf
+-rw-r--r--  1 root    root       12 2010-04-23 05:45 debian_version
+drwxr-xr-x  2 root    root     4096 2010-10-23 08:00 default
+drwxr-xr-x  4 root    root     4096 2010-10-07 12:09 defoma
+-rw-r--r--  1 root    root      600 2010-01-27 05:26 deluser.conf
+drwxr-xr-x  2 root    root     4096 2010-10-07 11:58 depmod.d
+drwxr-xr-x  3 root    root     4096 2010-10-07 12:08 dhcp
+drwxr-xr-x  4 root    root     4096 2010-10-07 11:58 dhcp3
+drwxr-xr-x  2 root    root     4096 2010-10-07 12:17 dictionaries-common
+drwxr-xr-x  3 root    root     4096 2010-10-07 12:04 doc-base
+drwxr-xr-x  4 root    root     4096 2010-10-07 11:57 dpkg
+drwxr-xr-x  3 root    root     4096 2010-10-07 12:03 emacs
+-rw-r--r--  1 root    root       79 2010-10-07 11:57 environment
+drwxr-xr-x  4 root    root     4096 2010-10-07 12:05 firefox
+drwxr-xr-x  4 root    root     4096 2010-10-07 12:02 fonts
+drwxr-xr-x  3 root    root     4096 2010-10-07 12:10 foomatic
+-rw-r--r--  1 root    root      614 2010-10-16 11:40 fstab
+-rw-r-----  1 root    fuse      216 2010-09-27 05:20 fuse.conf
+-rw-r--r--  1 root    root     3343 2010-09-10 13:02 gai.conf
+drwxr-xr-x  2 root    root     4096 2010-10-07 12:15 gamin
+drwxr-xr-x  6 root    root     4096 2010-10-07 12:00 gconf
+drwxr-xr-x  2 root    root     4096 2010-10-07 12:13 gdb
+drwxr-xr-x  6 root    root     4096 2010-10-07 12:15 gdm
+drwxr-xr-x  4 root    root     4096 2010-10-07 12:04 ghostscript
+drwxr-xr-x  3 root    root     4096 2010-10-16 21:42 gimp
+drwxr-xr-x  3 root    root     4096 2010-10-07 12:10 gnome
+drwxr-xr-x  2 root    root     4096 2010-10-07 12:12 gnome-app-install
+drwxr-xr-x  3 root    root     4096 2010-10-07 12:01 gnome-settings-daemon
+drwxr-xr-x  2 root    root     4096 2010-10-07 12:14 gnome-system-tools
+drwxr-xr-x  3 root    root     4096 2010-10-07 12:00 gnome-vfs-2.0
+-rw-r--r--  1 root    root    10852 2007-04-27 22:27 gnome-vfs-mime-magic
+drwxr-xr-x  2 root    root     4096 2010-10-23 08:01 gre.d
+drwxr-xr-x  2 root    root     4096 2010-10-07 12:11 groff
+-rw-r--r--  1 root    root      832 2010-10-16 11:47 group
+-rw-------  1 root    root      827 2010-10-16 11:47 group-
+drwxr-xr-x  2 root    root     4096 2010-10-07 12:13 grub.d
+-rw-r-----  1 root    shadow    690 2010-10-16 11:47 gshadow
+-rw-------  1 root    root      685 2010-10-16 11:47 gshadow-
+drwxr-xr-x  2 root    root     4096 2010-10-07 12:02 gtk-2.0
+-rw-r--r--  1 root    root     4728 2010-06-14 20:09 hdparm.conf
+-rw-r--r--  1 root    root       92 2010-04-23 05:45 host.conf
+-rw-r--r--  1 root    root        5 2010-10-16 11:45 hostname
+-rw-r--r--  1 root    root      379 2010-10-19 21:52 hosts
+-rw-r--r--  1 root    root      580 2010-10-07 12:10 hosts.allow
+-rw-r--r--  1 root    root      880 2010-10-07 12:10 hosts.deny
+drwxr-xr-x  2 root    root     4096 2010-10-07 12:15 hp
+drwxr-xr-x  3 root    root     4096 2010-10-07 12:08 ifplugd
+drwxr-xr-x  2 root    root     4096 2010-10-23 07:59 init
+drwxr-xr-x  2 root    root     4096 2010-10-23 08:00 init.d
+drwxr-xr-x  5 root    root     4096 2010-10-07 11:58 initramfs-tools
+-rw-r--r--  1 root    root     1721 2010-05-31 06:05 inputrc
+drwxr-xr-x  3 root    root     4096 2010-05-09 10:49 insserv
+-rw-r--r--  1 root    root      882 2010-05-09 10:49 insserv.conf
+drwxr-xr-x  2 root    root     4096 2010-05-09 10:49 insserv.conf.d
+drwxr-xr-x  2 root    root     4096 2010-10-07 11:58 iproute2
+-rw-r--r--  1 root    root       20 2010-10-07 05:15 issue
+-rw-r--r--  1 root    root       13 2010-10-07 05:15 issue.net
+drwxr-xr-x  5 root    root     4096 2010-10-16 11:55 java-6-openjdk
+drwxr-xr-x  2 root    root     4096 2010-10-07 11:58 kbd
+drwxr-xr-x  5 root    root     4096 2010-10-07 12:08 kernel
+-rw-r--r--  1 root    root      111 2010-10-16 11:51 kernel-img.conf
+-rw-r--r--  1 root    root     1309 2010-10-01 05:37 kerneloops.conf
+drwxr-xr-x  2 root    root     4096 2010-10-23 07:59 ldap
+-rw-r--r--  1 root    root    66780 2010-10-24 11:43 ld.so.cache
+-rw-r--r--  1 root    root       34 2010-10-07 11:56 ld.so.conf
+drwxr-xr-x  2 root    root     4096 2010-10-23 07:55 ld.so.conf.d
+-rw-r--r--  1 root    root      267 2010-04-23 05:45 legal
+-rw-r--r--  1 root    root     3587 2010-05-09 11:03 lftp.conf
+drwxr-xr-x  2 root    root     4096 2010-05-09 11:44 libpaper.d
+-rw-r--r--  1 root    root     2570 2010-08-05 11:57 locale.alias
+-rw-r--r--  1 root    root     3519 2010-10-16 11:53 localtime
+drwxr-xr-x  3 root    root     4096 2010-10-07 11:58 logcheck
+-rw-r--r--  1 root    root    10788 2010-09-03 06:28 login.defs
+-rw-r--r--  1 root    root      599 2009-02-19 06:57 logrotate.conf
+drwxr-xr-x  2 root    root     4096 2010-10-23 07:59 logrotate.d
+drwxr-xr-x  2 root    root     4096 2010-02-23 05:51 lsb-base
+-rw-r--r--  1 root    root     3239 2009-12-04 06:46 lsb-base-logging.sh
+-rw-r--r--  1 root    root      101 2010-10-07 04:47 lsb-release
+-rw-r--r--  1 root    root    15752 2009-07-25 11:13 ltrace.conf
+-rw-r--r--  1 root    root      111 2010-04-01 03:28 magic
+-rw-r--r--  1 root    root      111 2010-04-01 03:28 magic.mime
+-rw-r--r--  1 root    root    26559 2010-10-16 22:13 mailcap
+-rw-r--r--  1 root    root      449 2010-06-01 17:21 mailcap.order
+-rw-r--r--  1 root    root     5173 2010-08-17 11:10 manpath.config
+drwxr-xr-x  2 root    root     4096 2010-10-23 14:23 menu-methods
+drwxr-xr-x  3 root    root     4096 2010-10-16 17:35 mercurial
+-rw-r--r--  1 root    root    22275 2010-06-01 17:21 mime.types
+-rw-r--r--  1 root    root      801 2010-08-18 12:00 mke2fs.conf
+drwxr-xr-x  2 root    root     4096 2010-10-16 16:21 modprobe.d
+-rw-r--r--  1 root    root      210 2010-10-16 14:35 modules
+drwxr-xr-x  4 root    root     4096 2010-10-07 12:15 mono
+lrwxrwxrwx  1 root    root       13 2010-10-16 11:40 motd -> /var/run/motd
+-rw-r--r--  1 root    root      657 2010-10-22 06:40 mtab
+-rw-------  1 root    wreel       0 2010-10-16 12:23 mtab.fuselock
+-rw-r--r--  1 root    root      624 2010-05-16 07:07 mtools.conf
+drwxr-xr-x  3 root    root     4096 2010-10-16 22:04 mysql
+-rw-r--r--  1 root    root     8453 2010-05-09 12:32 nanorc
+drwxr-xr-x  3 root    root     4096 2010-10-16 15:40 ndiswrapper
+-rw-r--r--  1 root    root     2064 2006-11-23 14:33 netscsid.conf
+drwxr-xr-x  6 root    root     4096 2010-10-16 13:44 network
+drwxr-xr-x  5 root    root     4096 2010-10-07 12:15 NetworkManager
+-rw-r--r--  1 root    root       91 2010-04-23 05:45 networks
+-rw-r--r--  1 root    root      513 2010-10-07 12:13 nsswitch.conf
+drwxr-xr-x  2 root    root     4096 2010-10-07 12:13 obex-data-server
+drwxr-xr-x  2 root    root     4096 2010-10-07 12:03 openoffice
+drwxr-xr-x  4 root    root     4096 2010-10-16 18:07 opt
+-rw-r--r--  1 root    root      552 2010-08-16 22:47 pam.conf
+drwxr-xr-x  2 root    root     4096 2010-10-23 07:59 pam.d
+drwxr-xr-x  2 root    root     4096 2010-10-07 12:02 pango
+-rw-r--r--  1 root    root        7 2010-10-16 11:49 papersize
+-rw-r--r--  1 root    root     1653 2010-10-17 11:49 passwd
+-rw-------  1 root    root     1653 2010-10-17 11:49 passwd-
+drwxr-xr-x  2 root    root     4096 2010-10-07 12:14 pcmcia
+drwxr-xr-x  4 root    root     4096 2010-10-07 11:59 perl
+drwxr-xr-x  5 root    root     4096 2010-10-07 12:03 pm
+-rw-r--r--  1 root    root     7649 2010-10-07 12:14 pnm2ppa.conf
+drwxr-xr-x  5 root    root     4096 2010-10-07 12:01 polkit-1
+-rw-r--r--  1 root    root      350 2010-10-16 11:49 popularity-contest.conf
+drwxr-xr-x  8 root    dip      4096 2010-10-07 12:14 ppp
+lrwxrwxrwx  1 root    root       22 2010-10-23 07:59 printcap -> /var/run/cups/printcap
+-rw-r--r--  1 root    root      497 2010-10-07 11:57 profile
+drwxr-xr-x  2 root    root     4096 2010-10-07 12:11 profile.d
+-rw-r--r--  1 root    root     2626 2009-12-03 11:11 protocols
+drwxr-xr-x  2 root    root     4096 2010-10-23 08:00 pulse
+drwxr-xr-x  2 root    root     4096 2010-10-07 11:58 python
+drwxr-xr-x  2 root    root     4096 2010-10-07 11:57 python2.6
+drwxr-xr-x  2 root    root     4096 2010-10-16 16:37 rc0.d
+drwxr-xr-x  2 root    root     4096 2010-10-16 16:37 rc1.d
+drwxr-xr-x  2 root    root     4096 2010-10-16 16:36 rc2.d
+drwxr-xr-x  2 root    root     4096 2010-10-16 16:36 rc3.d
+drwxr-xr-x  2 root    root     4096 2010-10-16 16:36 rc4.d
+drwxr-xr-x  2 root    root     4096 2010-10-16 16:36 rc5.d
+drwxr-xr-x  2 root    root     4096 2010-10-16 16:37 rc6.d
+-rwxr-xr-x  1 root    root      306 2010-10-07 11:58 rc.local
+drwxr-xr-x  2 root    root     4096 2010-10-07 12:14 rcS.d
+drwxr-xr-x  3 root    root     4096 2010-10-07 12:03 resolvconf
+-rw-r--r--  1 root    root      112 2010-10-22 06:40 resolv.conf
+-rwxr-xr-x  1 root    root      268 2010-06-15 05:51 rmt
+-rw-r--r--  1 root    root      887 2009-12-03 11:11 rpc
+-rw-r--r--  1 root    root     1217 2010-02-24 13:26 rsyslog.conf
+drwxr-xr-x  2 root    root     4096 2010-10-07 12:11 rsyslog.d
+drwxr-xr-x  2 root    root     4096 2010-10-07 12:13 samba
+drwxr-xr-x  3 root    root     4096 2010-10-07 12:14 sane.d
+-rw-r--r--  1 root    root     3663 2010-06-18 08:42 screenrc
+-rw-r--r--  1 root    root     1192 2010-09-03 06:28 securetty
+drwxr-xr-x  4 root    root     4096 2010-10-07 11:57 security
+-rw-r--r--  1 root    root     8596 2010-05-27 05:22 sensors3.conf
+drwxr-xr-x  2 root    root     4096 2010-10-07 12:13 sensors.d
+-rw-r--r--  1 root    root    18832 2009-12-03 11:11 services
+drwxr-xr-x  3 root    root     4096 2010-10-07 12:10 sgml
+-rw-r-----  1 root    shadow   1132 2010-10-17 11:49 shadow
+-rw-------  1 root    root     1132 2010-10-17 11:49 shadow-
+-rw-r--r--  1 root    root      181 2010-10-07 12:12 shells
+drwxr-xr-x  2 root    root     4096 2010-10-07 12:12 skel
+drwxr-xr-x  2 root    root     4096 2010-10-07 12:13 snmp
+drwxr-xr-x  3 root    root     4096 2010-10-07 12:00 sound
+drwxr-xr-x  4 root    root     4096 2010-10-07 12:13 speech-dispatcher
+drwxr-xr-x  2 root    root     4096 2010-10-17 11:49 ssh
+drwxr-xr-x  4 root    root     4096 2010-10-07 12:02 ssl
+drwxr-xr-x  2 root    root     4096 2010-10-17 15:41 subversion
+-r--r-----  1 root    root      567 2010-10-16 11:47 sudoers
+drwxr-xr-x  2 root    root     4096 2010-10-07 11:58 sudoers.d
+-rw-r--r--  1 root    root     2084 2010-06-08 14:38 sysctl.conf
+drwxr-xr-x  2 root    root     4096 2010-10-07 11:58 sysctl.d
+drwxr-xr-x  2 root    root     4096 2010-10-07 11:57 terminfo
+drwxr-xr-x  3 root    root     4096 2010-10-16 17:45 thunderbird
+-rw-r--r--  1 root    root       17 2010-10-16 11:53 timezone
+drwxr-xr-x  2 root    root     4096 2010-10-16 11:55 timidity
+-rw-r--r--  1 root    root      645 2010-03-07 00:58 ts.conf
+-rw-r--r--  1 root    root     1260 2008-05-30 02:22 ucf.conf
+drwxr-xr-x  3 root    root     4096 2010-10-20 22:32 udev
+drwxr-xr-x  3 root    root     4096 2010-10-07 12:11 ufw
+-rw-r--r--  1 root    root      300 2010-03-24 06:16 updatedb.conf
+drwxr-xr-x  3 root    root     4096 2010-10-17 10:01 update-manager
+drwxr-xr-x  2 root    root     4096 2010-10-17 10:01 update-motd.d
+drwxr-xr-x  2 root    root     4096 2010-09-03 07:05 update-notifier
+drwxr-xr-x  2 root    root     4096 2010-10-07 12:13 UPower
+-rw-r--r--  1 root    root      571 2010-09-08 08:30 usb_modeswitch.conf
+drwxr-xr-x  2 root    root     4096 2010-10-07 12:14 usb_modeswitch.d
+drwxr-xr-x  2 root    root     4096 2010-10-07 11:58 vim
+drwxr-xr-x  4 root    root     4096 2010-10-16 22:12 vlc
+drwxr-xr-x  2 root    root     4096 2010-10-07 12:11 w3m
+-rw-r--r--  1 root    root     4496 2010-09-03 13:01 wgetrc
+drwxr-xr-x  2 root    root     4096 2010-10-16 11:55 wildmidi
+-rw-r--r--  1 root    root     1343 2007-01-09 13:39 wodim.conf
+drwxr-xr-x  2 root    root     4096 2010-10-16 13:31 wpa_supplicant
+drwxr-xr-x 10 root    root     4096 2010-10-07 12:15 X11
+drwxr-xr-x  6 root    root     4096 2010-10-16 22:04 xdg
+drwxr-xr-x  2 root    root     4096 2010-10-07 12:11 xml
+drwxr-xr-x  2 root    root     4096 2010-10-07 12:15 xul-ext
+drwxr-xr-x  2 root    root     4096 2010-10-23 08:01 xulrunner-1.9.2
+-rw-r--r--  1 root    root      645 2009-11-26 03:23 zsh_command_not_found
+say_hello: Starting "./test.sh"
+Hello from the shell!
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+say_it: Starting "echo 'hi there\n'"
+'hi there\n'
+say_it: exited with code (0)
+now: Starting "date"
+Sun Oct 24 12:01:46 EDT 2010
+Shutdown complete
